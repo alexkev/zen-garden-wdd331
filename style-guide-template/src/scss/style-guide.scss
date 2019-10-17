@@ -1,22 +1,23 @@
 @import 'partials/reset';
 @import 'partials/prefix-mixins';
 @import 'partials/layout'; // responsive grid and media queries
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');//Fonts
 
 // color palette - these colors will be the color swatches of the Colors section
 
-$color-1: #5f8ee4; // Cornflower Blue - Action color
-$color-2: #19191a; // Dark Blue
-$color-3: #e4655f; // Red
-$color-4: #e6e6e6; // light grey
-$color-5: #ffffff; // white
+$color-1: #eafbea; // Background-Color, light green
+$color-2: #6f9a8d; // Light Green
+$color-3: #1f6650; // Dark Green
+$color-4: #ea5e5e; // Pop color
+$color-5: white;
 
 // additional colors
 
-$success: #6fce72; // green
-$alert: $color-3; // red
+$success: #74b49b; // green
+$alert: $color-4; // red
 
 // fonts
-$primary-font: 'Merriweather', serif;
+$primary-font: 'Roboto', sans-serif;
 $secondary-font: 'Open Sans', sans-serif;
 
 /* -------------------------------- 
