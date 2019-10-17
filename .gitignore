@@ -1,0 +1,9 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/style-guide-template/node_modules
+
+# production
+/style-guide-template/build
+
+/style-guide-template/.cache
