@@ -157,7 +157,7 @@ xTypography
 h1,
 h2 {
 	font-family: $secondary-font;
-	color: $color-2;
+	color: $color-3;
 }
 
 h1 {
@@ -188,7 +188,7 @@ h2 {
 
 section > h2::before {
 	/* number before each section title */
-	color: darken($color-4, 15%);
+	color: darken($color-3, 15%);
 }
 
 p {
