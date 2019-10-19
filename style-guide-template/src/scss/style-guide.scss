@@ -5,10 +5,10 @@
 
 // color palette - these colors will be the color swatches of the Colors section
 
-$color-1: #eafbea; // Background-Color, light green
+$color-1: #1f6650; // Dark Green
 $color-2: #6f9a8d; // Light Green
-$color-3: #1f6650; // Dark Green
-$color-4: #ea5e5e; // Pop color
+$color-3: #ea5e5e; // Pop color
+$color-4: #eafbea; // Background-Color, light green
 $color-5: white;
 
 // additional colors
@@ -279,8 +279,8 @@ xIcons
 
 .cd-icons li {
 	/* icons size */
-	width: 60px;
-	height: 60px;
+	width: 70px;
+	height: 70px;
 }
 
 @import 'partials/basic-style';
