@@ -965,4 +965,29 @@ h6 {
   width: 40px;
 }
 
+/* -------------------------
+
+  HTML Elements
+
+--------------------------- */
+.color-1 {
+  color: #1f6650;
+}
+
+.color-s {
+  color: #74b49b;
+}
+
+.color-2 {
+  color: #6f9a8d;
+}
+
+.color-4 {
+  color: #eafbea;
+}
+
+.color-3 {
+  color: #ea5e5e;
+}
+
 /*# sourceMappingURL=styles.css.map */
