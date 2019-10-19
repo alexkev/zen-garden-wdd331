@@ -70,7 +70,7 @@ xPatterns
 -------------------------------- */
 .cd-box {
   /* this is the container of various design elements - i.e. the 2 logo of the branding section */
-  border: 1px solid #ea5e5e;
+  border: 1px solid #eafbea;
   border-radius: 3px;
   background: white;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
@@ -88,7 +88,7 @@ header {
 
 .cd-logo {
   /* logo box style */
-  background-color: #eafbea;
+  background-color: #1f6650;
   width: 120px;
 }
 @media only screen and (min-width: 1024px) {
@@ -111,7 +111,7 @@ header {
   }
   .cd-main-nav li a.selected {
     color: white;
-    box-shadow: 0 2px 0 #eafbea;
+    box-shadow: 0 2px 0 #1f6650;
   }
   .cd-main-nav li a:hover {
     color: white;
@@ -145,12 +145,12 @@ header {
 }
 .cd-download span {
   /* tooltip */
-  background: #eafbea;
+  background: #1f6650;
   color: white;
 }
 .cd-download span::before {
   /* right arrow color */
-  border-color: #eafbea;
+  border-color: #1f6650;
 }
 
 /* -------------------------------- 
@@ -176,7 +176,7 @@ xTypography
 h1,
 h2 {
   font-family: "Open Sans", sans-serif;
-  color: #6f9a8d;
+  color: #ea5e5e;
 }
 
 h1 {
@@ -219,7 +219,7 @@ p {
   color: #bacfc8;
 }
 p a {
-  color: #eafbea;
+  color: #1f6650;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
@@ -243,13 +243,13 @@ xButtons
   color: white;
   padding: 0.6em 2.2em;
   cursor: pointer;
-  background: #eafbea;
+  background: #1f6650;
 }
 .btn:focus {
   outline: none;
 }
 .no-touch .btn:hover {
-  background: white;
+  background: #257a5f;
 }
 .btn.btn-success {
   background: #74b49b;
@@ -258,19 +258,19 @@ xButtons
   background: #85bda7;
 }
 .btn.btn-alert {
-  background: #ea5e5e;
+  background: #eafbea;
 }
 .no-touch .btn.btn-alert:hover {
-  background: #ed7575;
+  background: white;
 }
 .btn.btn-outline {
-  color: #eafbea;
+  color: #1f6650;
   background: transparent;
-  box-shadow: inset 0 0 0 1px #eafbea;
+  box-shadow: inset 0 0 0 1px #1f6650;
 }
 .no-touch .btn.btn-outline:hover {
   color: white;
-  background: #eafbea;
+  background: #1f6650;
 }
 @media only screen and (min-width: 768px) {
   .btn {
@@ -280,7 +280,7 @@ xButtons
 
 .cd-buttons .cd-box:nth-of-type(2) span {
   /* CSS class name color */
-  color: #eafbea;
+  color: #1f6650;
 }
 
 /* -------------------------------- 
@@ -290,8 +290,8 @@ xIcons
 -------------------------------- */
 .cd-icons li {
   /* icons size */
-  width: 32px;
-  height: 32px;
+  width: 70px;
+  height: 70px;
 }
 
 /* -------------------------------- 
@@ -299,7 +299,9 @@ xIcons
 xBasic style
 
 -------------------------------- */
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -327,7 +329,9 @@ img {
   max-width: 100%;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
 }
@@ -765,13 +769,13 @@ section:nth-of-type(10) h2::before {
   padding: 0.6em 0;
 }
 .cd-colors li:nth-of-type(1) .cd-color-swatch {
-  background: #eafbea;
+  background: #1f6650;
 }
 .cd-colors li:nth-of-type(1) .cd-color-swatch::before {
-  background: white;
+  background: #257a5f;
 }
 .cd-colors li:nth-of-type(1) .cd-color-swatch::after {
-  background: #d5f7d5;
+  background: #195241;
 }
 .cd-colors li:nth-of-type(2) .cd-color-swatch {
   background: #6f9a8d;
@@ -783,22 +787,22 @@ section:nth-of-type(10) h2::before {
   background: #638d80;
 }
 .cd-colors li:nth-of-type(3) .cd-color-swatch {
-  background: #1f6650;
-}
-.cd-colors li:nth-of-type(3) .cd-color-swatch::before {
-  background: #257a5f;
-}
-.cd-colors li:nth-of-type(3) .cd-color-swatch::after {
-  background: #195241;
-}
-.cd-colors li:nth-of-type(4) .cd-color-swatch {
   background: #ea5e5e;
 }
-.cd-colors li:nth-of-type(4) .cd-color-swatch::before {
+.cd-colors li:nth-of-type(3) .cd-color-swatch::before {
   background: #ed7575;
 }
-.cd-colors li:nth-of-type(4) .cd-color-swatch::after {
+.cd-colors li:nth-of-type(3) .cd-color-swatch::after {
   background: #e74747;
+}
+.cd-colors li:nth-of-type(4) .cd-color-swatch {
+  background: #eafbea;
+}
+.cd-colors li:nth-of-type(4) .cd-color-swatch::before {
+  background: white;
+}
+.cd-colors li:nth-of-type(4) .cd-color-swatch::after {
+  background: #d5f7d5;
 }
 .cd-colors li:nth-of-type(5) .cd-color-swatch {
   background: white;
@@ -841,7 +845,7 @@ section:nth-of-type(10) h2::before {
 /* xTypography section - basic style */
 .cd-typography h1::before {
   content: "Aa - ";
-  color: #eafbea;
+  color: #1f6650;
 }
 
 .cd-buttons .cd-box:first-of-type {
@@ -870,28 +874,25 @@ section:nth-of-type(10) h2::before {
   margin: 1em;
 }
 .cd-icons .cd-icon-1 {
-  background-image: url("../assets/icons/icon-1.svg");
+  background-image: url("../assets/icons/btn-arrow.svg");
 }
 .cd-icons .cd-icon-2 {
-  background-image: url("../assets/icons/icon-2.svg");
+  background-image: url("../assets/icons/btn-css-icon.svg");
 }
 .cd-icons .cd-icon-3 {
-  background-image: url("../assets/icons/icon-3.svg");
+  background-image: url("../assets/icons/btn-faq.svg");
 }
 .cd-icons .cd-icon-4 {
-  background-image: url("../assets/icons/icon-4.svg");
+  background-image: url("../assets/icons/btn-info.svg");
 }
 .cd-icons .cd-icon-5 {
-  background-image: url("../assets/icons/icon-5.svg");
+  background-image: url("../assets/icons/btn-paper-airplane.svg");
 }
 .cd-icons .cd-icon-6 {
-  background-image: url("../assets/icons/icon-6.svg");
+  background-image: url("../assets/icons/btn-translation.svg");
 }
 .cd-icons .cd-icon-7 {
-  background-image: url("../assets/icons/icon-7.svg");
-}
-.cd-icons .cd-icon-8 {
-  background-image: url("../assets/icons/icon-8.svg");
+  background-image: url("../assets/icons/btn-view-all.svg");
 }
 
 /* xForm section - basic style */
@@ -931,13 +932,37 @@ section:nth-of-type(10) h2::before {
 
 .design-name:hover,
 .designer-name:hover {
-  color: #1f6650;
+  color: #ea5e5e;
 }
 
-.primary-h3 {
+.primary-h3 h3,
+.secondary-h3 h3,
+.other-h3 h3,
+h6 {
   color: #6f9a8d;
   font-size: 1.2em;
   font-weight: 600;
+}
+
+.cd-secondary-nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.cd-secondary-nav ul li {
+  margin-bottom: 10px;
+}
+.cd-secondary-nav ul small {
+  font-size: 0.8em;
+}
+
+.other-icons {
+  display: flex;
+}
+.other-icons li {
+  padding: 10px;
+}
+.other-icons img {
+  width: 40px;
 }
 
 /*# sourceMappingURL=styles.css.map */
