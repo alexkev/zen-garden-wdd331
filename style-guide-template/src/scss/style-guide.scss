@@ -1,7 +1,7 @@
 @import 'partials/reset';
 @import 'partials/prefix-mixins';
 @import 'partials/layout'; // responsive grid and media queries
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap'); //Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap'); //Fonts
 
 // color palette - these colors will be the color swatches of the Colors section
 
@@ -14,12 +14,10 @@ $color-5: white;
 // additional colors
 
 $success: #74b49b; // green
-$alert: $color-4; // red
+$alert: $color-3; // red
 
 // fonts
 $primary-font: 'Roboto',
-sans-serif;
-$secondary-font: 'Open Sans',
 sans-serif;
 
 /* -------------------------------- 
@@ -43,7 +41,7 @@ xPatterns
   /* this is the container of various design elements - i.e. the 2 logo of the branding section */
   border: 1px solid $color-4;
   border-radius: 3px;
-  background: $color-5;
+  background: $color-4;
   box-shadow: 0 1px 1px rgba(#000, 0.05);
   padding: 6px;
 }
@@ -158,13 +156,13 @@ xTypography
 
 h1,
 h2 {
-  font-family: $secondary-font;
+  font-family: $primary-font;
   color: $color-3;
 }
 
 h1 {
-  font-size: 2.4rem;
-  font-weight: 300;
+  font-size: 3rem;
+  font-weight: 500;
   line-height: 1.2;
   margin: 0 0 0.4em;
 
@@ -178,7 +176,8 @@ h1 {
 }
 
 h2 {
-  font-weight: bold;
+  font-weight: 900;
+  letter-spacing: .2em;
   text-transform: uppercase;
   margin: 1em 0;
 
@@ -194,9 +193,9 @@ section>h2::before {
 }
 
 p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 1.4;
-  color: lighten($color-2, 25%);
+  color: $color-2;
 
   a {
     color: $color-1;
@@ -222,7 +221,7 @@ xButtons
 
   font: {
     size: 1.4rem;
-    family: $secondary-font;
+    family: $primary-font;
   }
 
   color: $color-5;
@@ -299,6 +298,7 @@ xIcons
 .designer-name {
   color: $color-2;
   text-decoration: none;
+  line-height: 150%;
 }
 
 .design-name:hover,
@@ -311,7 +311,7 @@ xIcons
 .other-h3 h3,
 h6 {
   color: $color-2;
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: 600;
 }
 
