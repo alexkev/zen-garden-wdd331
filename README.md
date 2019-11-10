@@ -2,4 +2,4 @@
 
 # HOW TO RUN SCSS
 
-# ../zen-garden/scss> sass --watch ./style.scss ../css/style.css
+# ../zen-garden/scss> sass --watch ./style.scss ../style.css
