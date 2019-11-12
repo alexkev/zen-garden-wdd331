@@ -5,26 +5,40 @@
 /* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 /* basic elements */
+.extra6 {
+  content: url("https://images.unsplash.com/photo-1451186859696-371d9477be93?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=793b5d1d4707b9d5685bb15e8a99467e");
+  position: fixed;
+  z-index: -2;
+}
+
+.extra5 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 400vh;
+  z-index: -1;
+  background: linear-gradient(rgba(255, 255, 255, 0), white 50%);
+}
+
 html {
   margin: 0;
   padding: 0;
 }
 
 body {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
   display: grid;
   grid-template-columns: auto;
 }
 
 @media screen and (min-width: 600px) {
-  body {
+  .page-wrapper {
     display: grid;
     grid-template-columns: 30% auto 30%;
     grid-template-rows: auto;
     margin-top: 5%;
-  }
-
-  .page-wrapper {
-    display: contents;
   }
 
   .intro,
