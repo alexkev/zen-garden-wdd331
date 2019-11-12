@@ -8,11 +8,11 @@
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 
 /* basic elements */
-@import 'partials/reset';
-@import 'partials/prefix-mixins';
-@import 'partials/layout'; // responsive grid and media queries
-@import 'partials/colors';
-@import 'partials/type';
+//@import 'partials/_reset.scss';
+@import 'partials/_prefix-mixins.scss';
+@import 'partials/_layout.scss'; // responsive grid and media queries
+@import 'partials/_colors.scss';
+@import 'partials/_type.scss';
 
 html {
 	margin: 0;

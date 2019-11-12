@@ -5,6 +5,69 @@
 /* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 /* basic elements */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap");
+/* -------------------------------- 
+
+xTypography 
+
+-------------------------------- */
+h1,
+h2 {
+  font-family: "Roboto", sans-serif;
+  color: #ea5e5e;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0 0 0.4em;
+}
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin: 1em 0;
+}
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 1.8rem;
+    margin: 1em 0 1.4em;
+  }
+}
+
+section > h2::before {
+  /* number before each section title */
+  color: #de1d1d;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #6f9a8d;
+}
+p a {
+  color: #1f6650;
+  text-decoration: underline;
+}
+@media only screen and (min-width: 768px) {
+  p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+}
+
 html {
   margin: 0;
   padding: 0;
