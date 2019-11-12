@@ -8,8 +8,16 @@
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 
 /* basic elements */
+<<<<<<< HEAD
 
 @import "./background";
+=======
+//@import 'partials/_reset.scss';
+@import 'partials/_prefix-mixins.scss';
+@import 'partials/_layout.scss'; // responsive grid and media queries
+@import 'partials/_colors.scss';
+@import 'partials/_type.scss';
+>>>>>>> 1780127e8fbb9e380fef24c0c4a8046f0b487384
 
 html {
   margin: 0;
