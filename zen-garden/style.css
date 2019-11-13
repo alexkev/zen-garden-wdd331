@@ -5,21 +5,6 @@
 /* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 /* basic elements */
-.extra6 {
-  content: url("https://images.unsplash.com/photo-1451186859696-371d9477be93?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=793b5d1d4707b9d5685bb15e8a99467e");
-  position: fixed;
-  z-index: -2;
-}
-
-.extra5 {
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 600vh;
-  z-index: -1;
-  background: linear-gradient(rgba(255, 255, 255, 0), white 50%);
-}
-
 html {
   margin: 0;
   padding: 0;
@@ -31,6 +16,70 @@ body {
   background-color: transparent;
   display: grid;
   grid-template-columns: auto;
+}
+
+.page-wrapper {
+  padding: 2em;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  padding-left: 0;
+}
+nav ul li {
+  padding: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+}
+nav ul li a:nth-child(1)::after {
+  content: "\a";
+  white-space: pre;
+}
+
+.select {
+  text-align: center;
+}
+
+.design-name {
+  font-size: 1.2em;
+}
+
+.select,
+.design-name {
+  text-transform: uppercase;
+  color: #1f6650;
+}
+
+.designer-name {
+  color: #6f9a8d;
+}
+
+.next,
+.viewall {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  padding: 1.2em;
+  text-align: center;
+}
+.next a,
+.viewall a {
+  opacity: 0;
+}
+
+.archives {
+  display: none;
+}
+
+.next {
+  background-image: url("/assets/btn-arrow.svg");
+}
+
+.viewall {
+  background-image: url("/assets/btn-view-all.svg");
 }
 
 @media screen and (min-width: 600px) {
@@ -57,31 +106,34 @@ body {
     margin-top: 8em;
     grid-column: 1/span 1;
     grid-row: 1/span 2;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .select {
+    text-align: left;
+  }
+
+  .design-name {
+    font-size: 1em;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul li {
+    padding: 0 0 3em;
+    letter-spacing: 0.1em;
+  }
+  nav ul li a {
+    text-decoration: none;
+  }
+  nav ul li a:nth-child(1)::after {
+    content: "\a";
+    white-space: pre;
   }
 }
-.select,
-.design-name {
-  text-transform: uppercase;
-}
-
-nav ul {
-  list-style: none;
-  padding-left: 0;
-}
-nav ul li {
-  color: black;
-  padding-bottom: 3em;
-  letter-spacing: 0.1em;
-}
-nav ul a {
-  text-decoration: none;
-  color: black;
-}
-nav ul a:nth-child(1)::after {
-  content: "\a";
-  white-space: pre;
-}
-
 /* 
 body {
 	font: 75% georgia, sans-serif;
