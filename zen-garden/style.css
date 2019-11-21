@@ -13,26 +13,6 @@
 *
 **************************************************/
 /* basic elements */
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
-h1, h2, h3, p {
-  font-family: "Roboto", sans-serif;
-}
-
-h3 {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 1.8em;
-  line-height: 42px;
-  letter-spacing: 0.1em;
-  color: #E4EDDB;
-}
-
-p {
-  color: white;
-  font-size: 1em;
-  line-height: 21px;
-}
-
 html,
 body,
 .page-wrapper {
@@ -49,19 +29,22 @@ body,
 .page-wrapper {
   display: grid;
   grid-template-columns: 40% 60%;
-  grid-template-areas: ". title" "subtitle subtitle" ". summary" "preamble  explanation" ". explanation" "participation ." "participation benefits" "requirements requirements" "sidebar sidebar" "footer footer";
+  grid-template-areas: ". title" "subtitle subtitle" ". summary" "preamble  explanation" ". explanation" "participationBenefits participationBenefits" "participationBenefits participationBenefits" "requirements requirements" "sidebar sidebar" "footer footer";
 }
 
 .intro > header > h1 {
   grid-area: title;
+  height: calc(15vh - 2em);
 }
 
 .intro > header > h2 {
   grid-area: subtitle;
+  height: calc(15vh - 2em);
 }
 
 .summary {
   grid-area: summary;
+  height: calc(70vh - 4em);
 }
 
 .preamble {
@@ -72,12 +55,9 @@ body,
   grid-area: explanation;
 }
 
-.participation {
-  grid-area: participation;
-}
-
+.participation,
 .benefits {
-  grid-area: benefits;
+  grid-area: participationBenefits;
 }
 
 .requirements {
@@ -90,6 +70,49 @@ body,
 
 footer {
   grid-area: footer;
+}
+
+.intro > header > h2 {
+  background-color: #ea5e5e;
+  width: 38vw;
+  padding-left: 3em;
+}
+
+.summary {
+  margin: 1em;
+  background-color: #6f9a8d;
+  padding: 1em;
+}
+
+.preamble {
+  padding: 1em;
+  padding-left: 3em;
+}
+
+.explanation {
+  background-color: #1f6650;
+  padding: 1em;
+  width: 26vw;
+  margin-top: 25vw;
+  margin-left: 10vw;
+}
+
+.participation {
+  background-color: #1f6650;
+  opacity: 0.7;
+  width: 45%;
+  padding: 3em;
+}
+
+.benefits {
+  width: 40%;
+  margin-left: 55%;
+  padding: 1em;
+  position: relative;
+  top: 60%;
+  right: 0px;
+  background-color: #6f9a8d;
+  height: 40%;
 }
 
 /*# sourceMappingURL=style.css.map */
