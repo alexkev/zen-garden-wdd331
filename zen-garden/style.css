@@ -28,8 +28,8 @@ body,
 
 .page-wrapper {
   display: grid;
-  grid-template-columns: 40% 60%;
-  grid-template-areas: ". title" "subtitle subtitle" ". summary" "preamble  explanation" ". explanation" "participationBenefits participationBenefits" "participationBenefits participationBenefits" "requirements requirements" "sidebar sidebar" "footer footer";
+  grid-template-columns: 45% 10% 45%;
+  grid-template-areas: ". title title" "subtitle subtitle subtitle" ". summary summary" "preamble  explanation explanation" "preamble  explanation explanation" ". explanation explanation" "participation benefits benefits" "participation benefits benefits" "participation benefits benefits" "requirements requirements sidebar" "requirements requirements sidebar" "requirements requirements footer";
 }
 
 .intro > header > h1 {
@@ -55,9 +55,12 @@ body,
   grid-area: explanation;
 }
 
-.participation,
+.participation {
+  grid-area: participation;
+}
+
 .benefits {
-  grid-area: participationBenefits;
+  grid-area: benefits;
 }
 
 .requirements {
@@ -81,17 +84,17 @@ footer {
 .summary {
   margin: 1em;
   background-color: #6f9a8d;
-  padding: 1em;
+  padding: 2em;
 }
 
 .preamble {
-  padding: 1em;
+  padding: 2em;
   padding-left: 3em;
 }
 
 .explanation {
   background-color: #1f6650;
-  padding: 1em;
+  padding: 2em;
   width: 26vw;
   margin-top: 25vw;
   margin-left: 10vw;
@@ -100,19 +103,34 @@ footer {
 .participation {
   background-color: #1f6650;
   opacity: 0.7;
-  width: 45%;
-  padding: 3em;
+  margin-top: 30vh;
+  padding: 2em;
+  padding-left: 3em;
+  height: 70vh;
 }
 
 .benefits {
-  width: 40%;
-  margin-left: 55%;
   padding: 1em;
   position: relative;
   top: 60%;
   right: 0px;
   background-color: #6f9a8d;
-  height: 40%;
+  height: 38%;
+  padding: 2em;
+  z-index: -1;
+}
+
+.requirements {
+  background-color: #1f6650;
+  padding: 2em;
+  padding-left: 3em;
+}
+
+.sidebar,
+footer {
+  background-color: #eafbea;
+  padding: 2em;
+  padding-left: 3em;
 }
 
 /*# sourceMappingURL=style.css.map */

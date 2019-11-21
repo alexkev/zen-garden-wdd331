@@ -37,18 +37,20 @@ body,
 // layout
 .page-wrapper {
 	display: grid;
-	grid-template-columns: 40% 60%;
+	grid-template-columns: 45% 10% 45%;
 	grid-template-areas:
-		'. title'
-		'subtitle subtitle'
-		'. summary'
-		'preamble  explanation'
-		'. explanation'
-		'participationBenefits participationBenefits'
-		'participationBenefits participationBenefits'
-		'requirements requirements'
-		'sidebar sidebar'
-		'footer footer';
+		'. title title'
+		'subtitle subtitle subtitle'
+		'. summary summary'
+		'preamble  explanation explanation'
+		'preamble  explanation explanation'
+		'. explanation explanation'
+		'participation benefits benefits'
+		'participation benefits benefits'
+		'participation benefits benefits'
+		'requirements requirements sidebar'
+		'requirements requirements sidebar'
+		'requirements requirements footer';
 }
 
 .intro > header > h1 {
@@ -69,9 +71,11 @@ body,
 .explanation {
 	grid-area: explanation;
 }
-.participation,
+.participation {
+	grid-area: participation;
+}
 .benefits {
-	grid-area: participationBenefits;
+	grid-area: benefits;
 }
 .requirements {
 	grid-area: requirements;
@@ -85,7 +89,7 @@ footer {
 
 // postion
 $side-margin: 3em;
-$box-margin: 1em;
+$box-margin: 2em;
 
 .intro > header > h2 {
 	background-color: $color-3;
@@ -115,18 +119,32 @@ $box-margin: 1em;
 .participation {
 	background-color: $color-1;
 	opacity: 0.7;
-	width: 45%;
-	padding: $side-margin;
+	margin-top: 30vh;
+	padding: $box-margin;
+	padding-left: $side-margin;
+	height: 70vh;
 }
 .benefits {
-	width: 40%;
-	margin-left: 55%;
 	padding: 1em;
 	position: relative;
 	top: 60%;
 	right: 0px;
 	background-color: $color-2;
-	height: 40%;
+	height: 38%;
+	padding: $box-margin;
+	z-index: -1;
+}
+.requirements {
+	background-color: $color-1;
+	padding: $box-margin;
+	padding-left: $side-margin;
+}
+
+.sidebar,
+footer {
+	background-color: $color-4;
+	padding: $box-margin;
+	padding-left: $side-margin;
 }
 
 // NAV
