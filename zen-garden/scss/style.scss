@@ -14,9 +14,63 @@
 @import 'partials/_colors.scss';
 
 html,
-body {
-	margin: 0;
-	padding: 0;
+body,
+.page-wrapper {
+	margin: 0px;
+	padding: 0px;
+}
+
+.intro,
+.intro > header,
+.main {
+	display: contents;
+}
+
+.page-wrapper {
+	display: grid;
+	grid-template-columns: 40% 60%;
+	grid-template-areas:
+		'. title'
+		'subtitle subtitle'
+		'. summary'
+		'preamble  explanation'
+		'. explanation'
+		'participation .'
+		'participation benefits'
+		'requirements requirements'
+		'sidebar sidebar'
+		'footer footer';
+}
+
+.intro > header > h1 {
+	grid-area: title;
+}
+.intro > header > h2 {
+	grid-area: subtitle;
+}
+.summary {
+	grid-area: summary;
+}
+.preamble {
+	grid-area: preamble;
+}
+.explanation {
+	grid-area: explanation;
+}
+.participation {
+	grid-area: participation;
+}
+.benefits {
+	grid-area: benefits;
+}
+.requirements {
+	grid-area: requirements;
+}
+.sidebar {
+	grid-area: sidebar;
+}
+footer {
+	grid-area: footer;
 }
 
 // NAV
