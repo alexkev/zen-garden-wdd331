@@ -7,6 +7,14 @@
 
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 
+/*************************************************
+*
+* 					AUTHORS 
+* Erik Martinez - https://github.com/erikjmartinez
+* Alex - http://github.com/alexkev
+* Kelsie - https://github.com/kellodust
+*
+**************************************************/
 /* basic elements */
 
 @import 'partials/_background.scss';
@@ -44,5 +52,4 @@ body {
 // }
 
 // NOT MOBILE - 600px or higher
-@media screen and (min-width: 600px) {
-}
+@media screen and (min-width: 600px) {}
