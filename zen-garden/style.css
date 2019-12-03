@@ -13,6 +13,32 @@
 *
 **************************************************/
 /* basic elements */
+.extra1,
+.extra2,
+.extra3,
+.extra4 {
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+  left: 0;
+}
+
+.extra1 {
+  background-color: #eafbea;
+  top: 0;
+}
+
+.extra2 {
+  background-color: #ea5e5e;
+  top: 100vh;
+}
+
+.extra3 {
+  content: url("../../assets/background3.png");
+  top: 200vh;
+}
+
 html,
 body,
 .page-wrapper {

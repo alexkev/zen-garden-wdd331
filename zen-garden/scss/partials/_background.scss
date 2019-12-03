@@ -1,1 +1,26 @@
+.extra1,
+.extra2,
+.extra3,
+.extra4 {
+	width: 100%;
+	height: 100vh;
+	z-index: -1;
+	position: absolute;
 
+	left: 0;
+}
+
+.extra1 {
+	background-color: $color-4;
+	top: 0;
+}
+
+.extra2 {
+	background-color: $color-3;
+	top: 100vh;
+}
+
+.extra3 {
+	content: url('../../assets/background3.png');
+	top: 200vh;
+}
