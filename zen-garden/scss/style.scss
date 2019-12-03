@@ -133,11 +133,13 @@ $box-margin: 2em;
 	height: 38%;
 	padding: $box-margin;
 	z-index: -1;
+	width: 40vw;
 }
 .requirements {
 	background-color: $color-1;
 	padding: $box-margin;
 	padding-left: $side-margin;
+	height: 90vh;
 }
 
 .sidebar,

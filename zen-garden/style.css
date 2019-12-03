@@ -118,12 +118,14 @@ footer {
   height: 38%;
   padding: 2em;
   z-index: -1;
+  width: 40vw;
 }
 
 .requirements {
   background-color: #1f6650;
   padding: 2em;
   padding-left: 3em;
+  height: 90vh;
 }
 
 .sidebar,
