@@ -16,16 +16,10 @@
 	top: 100vh;
 	background-position-x: right;
 	background-color: $color-3;
-	@media screen and (min-width: 700px) {
-		background-image: url('../assets/background2-sm.png');
+	@media screen and (max-width: 1150px) {
+		background-image: url('');
 	}
-	@media screen and (max-width: 1200px) {
-		background-image: url('../assets/background2-md.png');
-	}
-	@media screen and (min-width: 1200px) {
-		background-image: url('../assets/background2-lg.png');
-	}
-
+	background-image: url('../assets/background2-lg.jpg');
 	background-repeat: no-repeat;
 	z-index: -2;
 }

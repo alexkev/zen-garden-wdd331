@@ -110,22 +110,27 @@ $box-margin: 2em;
 	padding: $box-margin;
 	padding-left: $side-margin;
 	max-width: 500px;
+	margin-top: 5em;
 }
 
 .explanation {
 	background-color: $color-1;
 	padding: $box-margin;
-	width: 20vw;
+	width: 25vw;
 	margin-top: 15vw;
 	margin-left: 5vw;
 }
 
 .participation {
 	background: rgba(31, 102, 80, 0.7);
-	margin-top: 30vh;
+	margin-top: 20vh;
 	padding: $box-margin;
 	padding-left: $side-margin;
-	height: 70vh;
+	height: 80vh;
+	@media screen and (min-width: 800px) {
+		margin-top: 10vh;
+		height: 90vh;
+	}
 }
 .benefits {
 	padding: 1em;
@@ -142,7 +147,6 @@ $box-margin: 2em;
 	background-color: $color-1;
 	padding: $box-margin;
 	padding-left: $side-margin;
-	height: 100vh;
 }
 
 .sidebar,

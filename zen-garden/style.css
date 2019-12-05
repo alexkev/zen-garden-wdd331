@@ -47,12 +47,18 @@ h3 {
   font-size: 2em;
   letter-spacing: 0.1em;
   color: #eafbea;
+  margin: 5px;
 }
 
 p {
   color: white;
-  font-size: 1.6em;
+  font-size: 1.3em;
   font-weight: 300;
+}
+@media screen and (max-width: 1200px) {
+  p {
+    font-size: 1em;
+  }
 }
 p a {
   color: white;
@@ -63,8 +69,22 @@ p a {
   font-weight: 100;
   font-size: 2em;
 }
+@media screen and (max-width: 1200px) {
+  .summary p {
+    font-size: 1.5em;
+  }
+}
 
-ul {
+.preamble p {
+  font-size: 1.4em;
+}
+@media screen and (max-width: 1200px) {
+  .preamble p {
+    font-size: 1em;
+  }
+}
+
+.requirements p ul {
   display: grid;
   grid-template-columns: auto auto;
   gap: 2em;
@@ -106,22 +126,13 @@ ul li .designer-name {
   top: 100vh;
   background-position-x: right;
   background-color: #ea5e5e;
+  background-image: url("../assets/background2-lg.jpg");
   background-repeat: no-repeat;
   z-index: -2;
 }
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 1150px) {
   .extra2 {
-    background-image: url("../assets/background2-sm.png");
-  }
-}
-@media screen and (max-width: 1200px) {
-  .extra2 {
-    background-image: url("../assets/background2-md.png");
-  }
-}
-@media screen and (min-width: 1200px) {
-  .extra2 {
-    background-image: url("../assets/background2-lg.png");
+    background-image: url("");
   }
 }
 
@@ -228,22 +239,29 @@ footer {
   padding: 2em;
   padding-left: 3em;
   max-width: 500px;
+  margin-top: 5em;
 }
 
 .explanation {
   background-color: #1f6650;
   padding: 2em;
-  width: 20vw;
+  width: 25vw;
   margin-top: 15vw;
   margin-left: 5vw;
 }
 
 .participation {
   background: rgba(31, 102, 80, 0.7);
-  margin-top: 30vh;
+  margin-top: 20vh;
   padding: 2em;
   padding-left: 3em;
-  height: 70vh;
+  height: 80vh;
+}
+@media screen and (min-width: 800px) {
+  .participation {
+    margin-top: 10vh;
+    height: 90vh;
+  }
 }
 
 .benefits {
@@ -262,7 +280,6 @@ footer {
   background-color: #1f6650;
   padding: 2em;
   padding-left: 3em;
-  height: 100vh;
 }
 
 .sidebar,
