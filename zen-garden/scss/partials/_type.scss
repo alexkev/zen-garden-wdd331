@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap');
 
-h1,h2,h3,p {
+h1,h2,h3,p,ul,a {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -58,3 +58,27 @@ p{
     font-weight: 100;
     font-size: 2.5em;
 }
+ul{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2em;
+}
+ul li{
+    
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $color-2;
+    list-style: none;
+    & a{
+        text-decoration: none;
+    }
+    & .design-name{
+        color: $color-3;  
+        font-weight: 300;
+        font-size: 2em;
+    }
+    & .designer-name{
+        color: $color-2;
+    }
+}
+

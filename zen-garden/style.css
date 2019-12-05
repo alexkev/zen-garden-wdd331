@@ -14,7 +14,7 @@
 **************************************************/
 /* basic elements */
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap");
-h1, h2, h3, p {
+h1, h2, h3, p, ul, a {
   font-family: "Roboto", sans-serif;
 }
 
@@ -61,6 +61,30 @@ p a {
   text-transform: uppercase;
   font-weight: 100;
   font-size: 2.5em;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2em;
+}
+
+ul li {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #6f9a8d;
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+}
+ul li .design-name {
+  color: #ea5e5e;
+  font-weight: 300;
+  font-size: 2em;
+}
+ul li .designer-name {
+  color: #6f9a8d;
 }
 
 .extra1 {
