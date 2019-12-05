@@ -147,14 +147,14 @@ ul li .designer-name {
 
 .extra3 {
   width: 100%;
-  height: 130vh;
+  height: 150vh;
   position: absolute;
   left: 0;
   top: 200vh;
   background-image: url("../assets/background3.png");
   z-index: -2;
   /* Background image is centered vertically and horizontally at all times */
-  background-position: center center;
+  background-position: center bottom;
   /* Background image doesn't tile */
   background-repeat: no-repeat;
   /* Background image is fixed in the viewport so that it doesn't move when 
@@ -265,6 +265,12 @@ footer {
   padding: 2em;
   padding-left: 3em;
   height: 80vh;
+}
+@media screen and (max-width: 800px) {
+  .participation {
+    margin-top: 10vh;
+    height: 90vh;
+  }
 }
 
 .benefits {
