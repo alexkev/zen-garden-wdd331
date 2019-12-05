@@ -131,13 +131,17 @@ ul li .designer-name {
   top: 100vh;
   background-position-x: right;
   background-color: #ea5e5e;
-  background-image: url("../assets/background2-lg.png");
   background-repeat: no-repeat;
   z-index: -2;
 }
-@media screen and (max-width: 1150px) {
+@media (min-width: 1480px) and (max-width: 1800px) {
   .extra2 {
-    background-image: url("");
+    background-image: url("../assets/background2-md.png");
+  }
+}
+@media (min-width: 1800px) {
+  .extra2 {
+    background-image: url("../assets/background2-lg.png");
   }
 }
 
@@ -261,12 +265,6 @@ footer {
   padding: 2em;
   padding-left: 3em;
   height: 80vh;
-}
-@media screen and (min-width: 800px) {
-  .participation {
-    margin-top: 10vh;
-    height: 90vh;
-  }
 }
 
 .benefits {
