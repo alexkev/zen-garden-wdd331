@@ -14,18 +14,20 @@
 **************************************************/
 /* basic elements */
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap");
-h1, h2, h3, p, ul, a {
+h1,
+h2,
+h3,
+p,
+ul,
+a {
   font-family: "Roboto", sans-serif;
 }
 
 h1 {
   font-weight: 700;
-  font-size: 4em;
+  font-size: 3em;
   text-transform: uppercase;
   color: #1f6650;
-  text-align: right;
-  padding: 1em;
-  margin-right: 4em;
 }
 
 h2 {
@@ -33,7 +35,6 @@ h2 {
   font-size: 3em;
   font-weight: 100;
   padding: 0.2em;
-  padding-top: 0.6em;
 }
 
 abbr {
@@ -60,7 +61,7 @@ p a {
 .summary p {
   text-transform: uppercase;
   font-weight: 100;
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 ul {
@@ -168,17 +169,17 @@ body,
 
 .intro > header > h1 {
   grid-area: title;
-  height: calc(15vh - 2em);
+  height: 5vh;
 }
 
 .intro > header > h2 {
   grid-area: subtitle;
-  height: calc(15vh - 2em);
+  height: 8vh;
 }
 
 .summary {
   grid-area: summary;
-  height: calc(70vh - 5em);
+  height: 87vh;
 }
 
 .preamble {
@@ -212,14 +213,13 @@ footer {
 .intro > header > h2 {
   background-color: #ea5e5e;
   width: 50vw;
-  height: 10vh;
   padding-left: 3em;
 }
 
 .summary {
   margin: 1em;
   width: 45vw;
-  height: 55vh;
+  height: 45vh;
   background-color: #6f9a8d;
   padding: 2em;
 }

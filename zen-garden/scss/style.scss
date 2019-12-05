@@ -55,15 +55,16 @@ body,
 
 .intro > header > h1 {
 	grid-area: title;
-	height: calc(15vh - 2em);
+	height: 5vh;
 }
 .intro > header > h2 {
 	grid-area: subtitle;
-	height: calc(15vh - 2em);
+	height: 8vh;
 }
+
 .summary {
 	grid-area: summary;
-	height: calc(70vh - 5em);
+	height: 87vh;
 }
 .preamble {
 	grid-area: preamble;
@@ -94,14 +95,13 @@ $box-margin: 2em;
 .intro > header > h2 {
 	background-color: $color-3;
 	width: 50vw;
-	height: 10vh;
 	padding-left: $side-margin;
 }
 
 .summary {
 	margin: 1em;
 	width: 45vw;
-	height: 55vh;
+	height: 45vh;
 	background-color: $color-2;
 	padding: $box-margin;
 }
