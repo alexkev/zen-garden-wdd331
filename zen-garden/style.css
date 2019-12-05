@@ -51,9 +51,23 @@ p {
   top: 100vh;
   background-position-x: right;
   background-color: #ea5e5e;
-  background-image: url("../assets/background2.png");
   background-repeat: no-repeat;
   z-index: -2;
+}
+@media screen and (min-width: 700px) {
+  .extra2 {
+    background-image: url("../assets/background2-sm.png");
+  }
+}
+@media screen and (max-width: 1200px) {
+  .extra2 {
+    background-image: url("../assets/background2-md.png");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .extra2 {
+    background-image: url("../assets/background2-lg.png");
+  }
 }
 
 .extra3 {
@@ -159,13 +173,14 @@ footer {
 .preamble {
   padding: 2em;
   padding-left: 3em;
+  max-width: 500px;
 }
 
 .explanation {
   background-color: #1f6650;
   padding: 2em;
-  width: 26vw;
-  margin-top: 25vw;
+  width: 20vw;
+  margin-top: 15vw;
   margin-left: 5vw;
 }
 
