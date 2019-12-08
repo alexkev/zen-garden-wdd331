@@ -38,7 +38,7 @@ h2 {
 }
 @media screen and (max-width: 800px) {
   h2 {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 }
 
@@ -296,6 +296,55 @@ footer {
   background-color: #eafbea;
   padding: 2em;
   padding-left: 3em;
+}
+
+@media screen and (max-width: 750px) {
+  .page-wrapper {
+    display: block;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    margin-right: 20px;
+    text-align: right;
+  }
+
+  .summary {
+    width: auto;
+  }
+
+  .preamble {
+    padding: 2em;
+    padding-left: 3em;
+    max-width: 500px;
+    margin-top: 0;
+    position: absolute;
+    top: 100vh;
+  }
+
+  .explanation {
+    width: 70vw;
+    margin: 84vh auto 10vh;
+  }
+
+  .extra2 {
+    height: 70vh;
+  }
+
+  .extra3 {
+    top: 170vh;
+    height: 200vh;
+  }
+
+  .participation {
+    margin: 0;
+    height: 70vh;
+    padding: 2em;
+  }
+
+  .benefits {
+    width: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
