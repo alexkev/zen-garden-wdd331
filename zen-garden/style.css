@@ -314,7 +314,7 @@ footer {
 }
 
 .design-selection {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 .design-selection nav ul {
   display: grid;
@@ -333,18 +333,83 @@ footer {
   white-space: pre;
 }
 
-.zen-resources {
-  position: absolute;
-  bottom: 60px;
-  left: 20px;
-  right: 20px;
+.next,
+.viewall,
+.view-css,
+.css-resources,
+.zen-faq,
+.zen-submit,
+.zen-translations {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  padding: 1.2em 0;
+  text-align: center;
+}
+.next a,
+.viewall a,
+.view-css a,
+.css-resources a,
+.zen-faq a,
+.zen-submit a,
+.zen-translations a {
+  opacity: 0;
 }
 
+.next {
+  background-image: url(/zen-garden-wdd331/assets/btn-arrow.svg);
+  background-size: 50px;
+  justify-self: end;
+}
+
+.viewall {
+  background-image: url(/zen-garden-wdd331/assets/btn-view-all.svg);
+  background-size: 50px;
+  justify-self: start;
+}
+
+.view-css {
+  background-image: url(/zen-garden-wdd331/assets/btn-css-icon.svg);
+  background-size: 50px;
+}
+
+.css-resources {
+  background-image: url(/zen-garden-wdd331/assets/btn-info.svg);
+  background-size: 50px;
+}
+
+.zen-faq {
+  background-image: url(/zen-garden-wdd331/assets/btn-faq.svg);
+  background-size: 50px;
+  padding: 25px;
+}
+
+.zen-submit {
+  background-image: url(/zen-garden-wdd331/assets/btn-paper-airplane.svg);
+  background-size: 50px;
+}
+
+.zen-translations {
+  background-image: url(/zen-garden-wdd331/assets/btn-translation.svg);
+  background-size: 50px;
+}
+
+.design-archives,
+.zen-resources {
+  padding: 10px;
+}
 .design-archives ul,
 .zen-resources ul {
-  display: flex;
-  justify-content: space-evenly;
   padding: 0;
+  display: grid;
+}
+
+.design-archives ul {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.zen-resources ul {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 @media screen and (max-width: 750px) {

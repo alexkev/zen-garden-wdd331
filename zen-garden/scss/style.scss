@@ -185,7 +185,7 @@ footer {
 }
 
 .design-selection {
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 
 	nav ul {
 		display: grid;
@@ -209,50 +209,83 @@ footer {
 	}
 }
 
-// .next,
-// .viewall {
-// 	background-repeat: no-repeat;
-// 	background-position: center center;
-// 	background-size: contain;
-// 	padding: 1.2em;
-// 	text-align: center;
+.next,
+.viewall,
+.view-css,
+.css-resources,
+.zen-faq,
+.zen-submit,
+.zen-translations {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	padding: 1.2em 0;
+	text-align: center;
 
-// 	a {
-// 		// display: none;
-// 		opacity: 0;
-// 	}
-// }
+	a {
+		opacity: 0;
+	}
+}
 
-// .next {
-// 	background-image: url('../assets/icons/btn-arrow.svg');
+.next {
+	background-image: url(/zen-garden-wdd331/assets/btn-arrow.svg);
+	background-size: 50px;
+	justify-self: end;
+}
 
-// }
+.viewall {
+	background-image: url(/zen-garden-wdd331/assets/btn-view-all.svg);
+	background-size: 50px;
+	justify-self: start;
+}
 
-// .viewall {
-// 	background-image: url('/assets/btn-view-all.svg');
-// }
-// .design-archives ul {
-// 	text-align: center;
-// }
+.view-css {
+	background-image: url(/zen-garden-wdd331/assets/btn-css-icon.svg);
+	background-size: 50px;
 
-// .design-archives {
-// 	padding-bottom: 20px;
-// }
+}
 
+.css-resources {
+	background-image: url(/zen-garden-wdd331/assets/btn-info.svg);
+	background-size: 50px;
+
+}
+
+.zen-faq {
+	background-image: url(/zen-garden-wdd331/assets/btn-faq.svg);
+	background-size: 50px;
+	padding: 25px;
+}
+
+.zen-submit {
+	background-image: url(/zen-garden-wdd331/assets/btn-paper-airplane.svg);
+	background-size: 50px;
+
+}
+
+.zen-translations {
+	background-image: url(/zen-garden-wdd331/assets/btn-translation.svg);
+	background-size: 50px;
+}
+
+.design-archives,
 .zen-resources {
-	position: absolute;
-	bottom: 60px;
-	left: 20px;
-	right: 20px;
+	padding: 10px;
+
+	ul {
+		padding: 0;
+		display: grid;
+		// flex-direction: row;
+		// justify-content: center;
+	}
 }
 
-.design-archives ul,
+.design-archives ul {
+	grid-template-columns: repeat(2, 1fr);
+}
+
 .zen-resources ul {
-	display: flex;
-	justify-content: space-evenly;
-	padding: 0;
+	grid-template-columns: repeat(5, 1fr);
 }
-
-
 
 @import 'partials/_mobile.scss';
