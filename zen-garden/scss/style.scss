@@ -29,7 +29,7 @@ body,
 }
 
 .intro,
-.intro > header,
+.intro>header,
 .main {
 	display: contents;
 }
@@ -50,14 +50,15 @@ body,
 		'participation benefits benefits'
 		'requirements requirements sidebar'
 		'requirements requirements sidebar'
-		'requirements requirements footer';
+		'requirements requirements sidebar';
 }
 
-.intro > header > h1 {
+.intro>header>h1 {
 	grid-area: title;
 	height: 5vh;
 }
-.intro > header > h2 {
+
+.intro>header>h2 {
 	grid-area: subtitle;
 	height: 8vh;
 }
@@ -66,35 +67,43 @@ body,
 	grid-area: summary;
 	height: 87vh;
 }
+
 .preamble {
 	grid-area: preamble;
 }
+
 .explanation {
 	grid-area: explanation;
 	// height: 100vh;
 }
+
 .participation {
 	grid-area: participation;
 	// height: 100vh;
 }
+
 .benefits {
 	grid-area: benefits;
 }
+
 .requirements {
 	grid-area: requirements;
 }
+
 .sidebar {
 	grid-area: sidebar;
+	position: relative;
 }
+
 footer {
-	grid-area: footer;
+	display: none;
 }
 
 // postion
 $side-margin: 3em;
 $box-margin: 2em;
 
-.intro > header > h2 {
+.intro>header>h2 {
 	background-color: $color-3;
 	width: 50vw;
 	padding-left: $side-margin;
@@ -129,11 +138,13 @@ $box-margin: 2em;
 	padding: $box-margin;
 	padding-left: $side-margin;
 	height: 80vh;
+
 	@media screen and (max-width: 800px) {
 		margin-top: 10vh;
 		height: 90vh;
 	}
 }
+
 .benefits {
 	padding: 1em;
 	position: relative;
@@ -145,6 +156,7 @@ $box-margin: 2em;
 	z-index: -1;
 	width: 40vw;
 }
+
 .requirements {
 	background-color: $color-1;
 	padding: $box-margin;
@@ -158,28 +170,89 @@ footer {
 	padding-left: $side-margin;
 }
 
-// NAV
-// Should be at
-// the bottom for mobile
-// nav ul {
-// 	display: grid;
-// 	grid-template-columns: 1fr 1fr;
-// 	list-style: none;
-// 	padding-left: 0;
+.requirements h3 {
+	color: $color-3;
+}
 
-// 	li {
-// 		padding: 10px;
+.select {
+	text-align: center;
+	color: $color-3;
+}
 
-// 		a {
-// 			text-decoration: none;
+.archives,
+.resources {
+	display: none;
+}
 
-// 			&:nth-child(1)::after {
-// 				content: "\A";
-// 				white-space: pre;
-// 			}
-// 		}
+.design-selection {
+	padding-bottom: 50px;
+
+	nav ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		list-style: none;
+		padding-left: 0;
+
+		li {
+			padding: 10px;
+
+			a {
+				text-decoration: none;
+
+				&:nth-child(1)::after {
+					content: "\A";
+					white-space: pre;
+				}
+			}
+		}
+
+	}
+}
+
+// .next,
+// .viewall {
+// 	background-repeat: no-repeat;
+// 	background-position: center center;
+// 	background-size: contain;
+// 	padding: 1.2em;
+// 	text-align: center;
+
+// 	a {
+// 		// display: none;
+// 		opacity: 0;
 // 	}
+// }
+
+// .next {
+// 	background-image: url('../assets/icons/btn-arrow.svg');
 
 // }
+
+// .viewall {
+// 	background-image: url('/assets/btn-view-all.svg');
+// }
+// .design-archives ul {
+// 	text-align: center;
+// }
+
+// .design-archives {
+// 	padding-bottom: 20px;
+// }
+
+.zen-resources {
+	position: absolute;
+	bottom: 60px;
+	left: 20px;
+	right: 20px;
+}
+
+.design-archives ul,
+.zen-resources ul {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 0;
+}
+
+
 
 @import 'partials/_mobile.scss';

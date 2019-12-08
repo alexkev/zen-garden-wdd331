@@ -184,7 +184,7 @@ body,
 .page-wrapper {
   display: grid;
   grid-template-columns: 45% 10% 45%;
-  grid-template-areas: ". title title" "subtitle subtitle subtitle" ". summary summary" "preamble  explanation explanation" "preamble  explanation explanation" ". explanation explanation" "participation benefits benefits" "participation benefits benefits" "participation benefits benefits" "requirements requirements sidebar" "requirements requirements sidebar" "requirements requirements footer";
+  grid-template-areas: ". title title" "subtitle subtitle subtitle" ". summary summary" "preamble  explanation explanation" "preamble  explanation explanation" ". explanation explanation" "participation benefits benefits" "participation benefits benefits" "participation benefits benefits" "requirements requirements sidebar" "requirements requirements sidebar" "requirements requirements sidebar";
 }
 
 .intro > header > h1 {
@@ -224,10 +224,11 @@ body,
 
 .sidebar {
   grid-area: sidebar;
+  position: relative;
 }
 
 footer {
-  grid-area: footer;
+  display: none;
 }
 
 .intro > header > h2 {
@@ -296,6 +297,54 @@ footer {
   background-color: #eafbea;
   padding: 2em;
   padding-left: 3em;
+}
+
+.requirements h3 {
+  color: #ea5e5e;
+}
+
+.select {
+  text-align: center;
+  color: #ea5e5e;
+}
+
+.archives,
+.resources {
+  display: none;
+}
+
+.design-selection {
+  padding-bottom: 50px;
+}
+.design-selection nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  padding-left: 0;
+}
+.design-selection nav ul li {
+  padding: 10px;
+}
+.design-selection nav ul li a {
+  text-decoration: none;
+}
+.design-selection nav ul li a:nth-child(1)::after {
+  content: "\a";
+  white-space: pre;
+}
+
+.zen-resources {
+  position: absolute;
+  bottom: 60px;
+  left: 20px;
+  right: 20px;
+}
+
+.design-archives ul,
+.zen-resources ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
 }
 
 @media screen and (max-width: 750px) {
