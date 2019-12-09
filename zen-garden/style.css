@@ -299,13 +299,17 @@ footer {
   padding-left: 3em;
 }
 
-.requirements h3 {
+.requirements h3,
+.select {
   color: #ea5e5e;
+}
+
+.requirements h3 {
+  margin-bottom: 5px;
 }
 
 .select {
   text-align: center;
-  color: #ea5e5e;
 }
 
 .archives,
@@ -322,8 +326,15 @@ footer {
   list-style: none;
   padding-left: 0;
 }
+@media only screen and (min-width: 750px) and (max-width: 970px) {
+  .design-selection nav ul {
+    grid-template-columns: 1fr;
+  }
+}
 .design-selection nav ul li {
   padding: 10px;
+  margin: 5px 0;
+  font-size: 0.8em;
 }
 .design-selection nav ul li a {
   text-decoration: none;
@@ -354,6 +365,24 @@ footer {
 .zen-submit a,
 .zen-translations a {
   opacity: 0;
+}
+
+.design-archives,
+.zen-resources {
+  padding: 10px;
+}
+.design-archives ul,
+.zen-resources ul {
+  padding: 0;
+  display: grid;
+}
+
+.design-archives ul {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.zen-resources ul {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .next {
@@ -392,24 +421,6 @@ footer {
 .zen-translations {
   background-image: url(/zen-garden-wdd331/assets/btn-translation.svg);
   background-size: 50px;
-}
-
-.design-archives,
-.zen-resources {
-  padding: 10px;
-}
-.design-archives ul,
-.zen-resources ul {
-  padding: 0;
-  display: grid;
-}
-
-.design-archives ul {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.zen-resources ul {
-  grid-template-columns: repeat(5, 1fr);
 }
 
 @media screen and (max-width: 750px) {
@@ -458,6 +469,10 @@ footer {
 
   .benefits {
     width: auto;
+  }
+
+  .requirements h3 {
+    color: #eafbea;
   }
 }
 
